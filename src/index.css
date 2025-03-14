@@ -3,9 +3,18 @@
 @tailwind utilities;
 
 body {
-    @apply bg-green-950 text-white tracking-tight;
+    @apply bg-green-950 text-white;
 }
 
 .nav-link { 
     @apply text-lg font-bold duration-300;
 }
+
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }

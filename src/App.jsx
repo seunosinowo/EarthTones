@@ -1,4 +1,5 @@
-import HeaderComponent from "./components/HeaderComponent"
+import React from "react"
+import HeroSection from "./components/HeroSection"
 import NavBar from "./components/NavBar"
 
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <div>
         <NavBar/>
-        <HeaderComponent/>
+        <HeroSection/>
       </div>
     </>
   )
