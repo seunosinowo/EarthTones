@@ -19,6 +19,26 @@ const HeroSection = () => {
                         the beauty and benefits of nature, and get inspired to make the most of
                         every day, no matter the weather.
                     </p>
+
+                    <div>
+                        <button className=''>
+                            <span>Shop Now</span>
+                            <i className='ri-leaf-line'></i>
+                        </button>
+
+                        <button>
+                            <span>Know More</span>
+                            <i className='ri-leaf-line'></i>
+                        </button>
+
+                        <div>
+                            <i class="ri-facebook-line"></i>
+                            <i class="ri-twitter-x-line"></i>
+                            <i class="ri-instagram-line"></i>
+                            <i class="ri-linkedin-box-fill"></i>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
