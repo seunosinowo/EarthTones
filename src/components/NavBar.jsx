@@ -11,6 +11,13 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
+  const navLinks = [
+    { name: 'Home', href: '#'},
+    { name: 'About', href: '#'},
+    { name: 'Popular', href: '#'},
+    { name: 'Review', href: '#'}
+  ]
+
   return (
     <nav className='bg-green-950 fixed w-full top-0 left-0 z-50 text-white tracking-tight'>
       <div className='container mx-auto flex items-center justify-between h-16 sm:h-20 px-4'>
@@ -24,11 +31,16 @@ const NavBar = () => {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
+        {/* navLinks
+        nav-link text-white hover:text-yellow-500 */}
+
         <ul className='hidden lg:flex lg:gap-8'>
-          <li><a href='#' className='nav-link text-white hover:text-yellow-500'>Home</a></li>
-          <li><a href='#' className='nav-link text-white hover:text-yellow-500'>About</a></li>
-          <li><a href='#' className='nav-link text-white hover:text-yellow-500'>Popular</a></li>
-          <li><a href='#' className='nav-link text-white hover:text-yellow-500'>Review</a></li>
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <a href={link.href} 
+              className='nav-link text-white hover:text-yellow-500'>{link.name}</a>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -44,10 +56,12 @@ const NavBar = () => {
       {isOpen && (
         <div className='fixed left-0 top-16 w-full bg-slate-200 p-12 flex flex-col justify-center items-center lg:hidden'>
           <ul className='space-y-6 text-green-950'>
-            <li><a href='#' className='nav-link hover:underline'>Home</a></li>
-            <li><a href='#' className='nav-link hover:underline'>About</a></li>
-            <li><a href='#' className='nav-link hover:underline'>Popular</a></li>
-            <li><a href='#' className='nav-link hover:underline'>Review</a></li>
+            {navLinks.map((link) => (
+            <li key={link.name}>
+              <a href={link.href} 
+              className='nav-link hover:underline'>{link.name}</a>
+            </li>
+          ))}
           </ul>
         </div>
       )}
