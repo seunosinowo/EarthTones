@@ -4,9 +4,16 @@ import cup from '../assets/cup.png';
 const HeroSection = () => {
   return (
     <div id='Herosection' className='py-20 md:py-24 container mx-auto'>
+        {/* blob 1 */}
+        <div className='w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+        </div>
+
+        {/* blob 2 */}
+        <div className='w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0'>
+        </div>
 
       <div className='flex flex-col items-center gap-5 lg:flex-row'>
-        
+
         <div className='lg:w-1/2 space-y-5'>
           <h1 className='text-2xl md:text-3xl lg:text-4xl mb-8 sm:w-full'>
             <span className='text-yellow-500'>Nature's positivity,</span> delivered {" "}
@@ -51,7 +58,7 @@ const HeroSection = () => {
           </div>
 
           {/* flower */}
-          <div className='absolute bottom-0 left-0 opacity-30'>
+          <div className='absolute bottom-9 left-0 opacity-30'>
             <i className='ri-flower-line text-6xl text-yellow-500'></i>
           </div>
 
