@@ -69,8 +69,11 @@ const WeatherSection = () => {
   }, []);
 
   return (
-    <div className="weather bg-green-950 p-10 rounded-lg flex flex-col items-center shadow-lg">
-      <div className="search-bar flex items-center gap-3 mb-6">
+    <div className="weather bg-green-950 p-6 sm:p-8 md:p-10 rounded-lg flex flex-col items-center shadow-lg text-white">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-center">
+        Weather Forecast
+      </h1>
+      <div className="search-bar flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-4 sm:mb-6 w-full">
         <input
           ref={cityRef}
           type="text"
@@ -93,30 +96,30 @@ const WeatherSection = () => {
 
       {weatherData ? (
         <>
-          <img src={weatherData.icon} alt="weather icon" className="weather_icon w-36 my-6" />
-          <p className="temperature text-white text-6xl">{weatherData.temperature}&deg;C</p>
-          <p className="location text-white text-4xl">{weatherData.location}</p>
+          <img src={weatherData.icon} alt="weather icon" className="weather_icon w-24 sm:w-28 md:w-36 my-4 sm:my-6" />
+          <p className="temperature text-3xl sm:text-4xl md:text-5xl lg:text-6xl">{weatherData.temperature}&deg;C</p>
+          <p className="location text-xl sm:text-2xl md:text-3xl lg:text-4xl">{weatherData.location}</p>
 
-          <div className="weather-data w-full mt-10 text-white flex justify-between">
-            <div className="col flex items-start gap-3 text-xl">
+          <div className="weather-data w-full mt-6 sm:mt-8 md:mt-10 flex flex-col sm:flex-row justify-between gap-4 sm:gap-6">
+            <div className="col flex items-start gap-2 sm:gap-3 text-base sm:text-lg md:text-xl">
               <img src={humidityIcon} alt="humidity" className="w-6 mt-2" />
               <div>
                 <p>{weatherData.humidity}%</p>
-                <span className="text-sm">Humidity</span>
+                <span className="text-xs sm:text-sm">Humidity</span>
               </div>
             </div>
 
-            <div className="col flex items-start gap-3 text-xl">
+            <div className="col flex items-start gap-2 sm:gap-3 text-base sm:text-lg md:text-xl">
               <img src={windIcon} alt="wind speed" className="w-6 mt-2" />
               <div>
                 <p>{weatherData.windSpeed} Km/h</p>
-                <span className="text-sm">Wind Speed</span>
+                <span className="text-xs sm:text-sm">Wind Speed</span>
               </div>
             </div>
           </div>
         </>
       ) : (
-        <p className="text-white">No data available</p>
+        <p className="text-white text-center text-sm sm:text-base">No data available</p>
       )}
     </div>
   );

@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -85,6 +84,6 @@ body {
 }
 
 /* Fonts */
-.font-lobster {
-    font-family: 'Lobster', cursive;
+.font-exo-2 {
+  font-family: "Exo 2", sans-serif;
 }
