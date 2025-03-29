@@ -69,22 +69,22 @@ const WeatherSection = () => {
   }, []);
 
   return (
-    <div className="weather bg-green-950 p-6 sm:p-8 md:p-10 rounded-lg flex flex-col items-center shadow-lg text-white">
+    <div className="weather bg-green-950 p-6 sm:p-8 md:p-10 rounded-lg flex flex-col items-center justify-center shadow-lg text-white">
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-center">
         Weather Forecast
       </h1>
-      <div className="search-bar flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-4 sm:mb-6 w-full">
+      <div className="search-bar flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6 w-full">
         <input
           ref={cityRef}
           type="text"
           placeholder="City"
-          className="h-12 rounded-full px-6 text-gray-700 bg-teal-100 text-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          className="h-12 w-full sm:w-auto rounded-full px-6 text-gray-700 bg-teal-100 text-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
         <input
           ref={countryRef}
           type="text"
           placeholder="Country Code (e.g., NG)"
-          className="h-12 rounded-full px-6 text-gray-700 bg-teal-100 text-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          className="h-12 w-full sm:w-auto rounded-full px-6 text-gray-700 bg-teal-100 text-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
         <img
           src={searchIcon}
@@ -97,10 +97,10 @@ const WeatherSection = () => {
       {weatherData ? (
         <>
           <img src={weatherData.icon} alt="weather icon" className="weather_icon w-24 sm:w-28 md:w-36 my-4 sm:my-6" />
-          <p className="temperature text-3xl sm:text-4xl md:text-5xl lg:text-6xl">{weatherData.temperature}&deg;C</p>
-          <p className="location text-xl sm:text-2xl md:text-3xl lg:text-4xl">{weatherData.location}</p>
+          <p className="temperature text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">{weatherData.temperature}&deg;C</p>
+          <p className="location text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center">{weatherData.location}</p>
 
-          <div className="weather-data w-full mt-6 sm:mt-8 md:mt-10 flex flex-col sm:flex-row justify-between gap-4 sm:gap-6">
+          <div className="weather-data w-full mt-6 sm:mt-8 md:mt-10 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
             <div className="col flex items-start gap-2 sm:gap-3 text-base sm:text-lg md:text-xl">
               <img src={humidityIcon} alt="humidity" className="w-6 mt-2" />
               <div>
