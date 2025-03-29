@@ -16,6 +16,9 @@ export default {
       padding: {
         default: "12px",
         md: "32px",
+      },
+      fontFamily: {
+        lobster: ['Lobster', 'cursive']
       }
     }
   },
