@@ -1,8 +1,11 @@
-import React from "react"
-import HeroSection from "./components/HeroSection"
+import React, {lazy, Suspense} from "react"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import NavBar from "./components/NavBar"
-import WeatherSection from "./components/WeatherSection"
-import Services from "./components/Services"
+import { Loader } from "lucide-react"
+
+const HeroSection = lazy(() => import('./components/HeroSection'))
+const WeatherSection = lazy(() => import('./components/WeatherSection'))
+const Services = lazy(() => import('./components/Services'))
 
 
 function App() {
@@ -10,10 +13,25 @@ function App() {
   return (
     <>
       <div>
+        <BrowserRouter>
         <NavBar/>
-        <HeroSection/>
-        <WeatherSection/>
-        <Services/>
+          <Suspense fallback = {<div><Loader/></div>}>
+            <HeroSection/>
+            <WeatherSection/>
+            <Services/>
+            </Suspense>
+        </BrowserRouter>
+
+
+            {/* Touch back */}
+            {/* <Routes>
+              <Route path = "" element={<HeroSection/>}/>
+              <Route path = "" element= {<WeatherSection/>}/>
+              <Route path = "" element={<Services/>}/>
+            </Routes> */}
+
+
+        
       </div>
     </>
   )
