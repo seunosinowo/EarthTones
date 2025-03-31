@@ -2,6 +2,7 @@ import React, {lazy, Suspense} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Loader from "./components/Loader/Loading";
+import NewsLetter from "./components/NewsLetter";
 
 const HeroSection = lazy(() => import('./components/HeroSection'))
 const WeatherSection = lazy(() => import('./components/WeatherSection'))
@@ -21,6 +22,7 @@ function App() {
             <WeatherSection/>
             <Services/>
             <Popular/>
+            <NewsLetter/>
 
 
             </Suspense>

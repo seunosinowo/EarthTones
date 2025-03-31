@@ -12,7 +12,7 @@ const Popular = () => {
         <p className='max-w-2xl'>Find your ideal plant match based on your lifestyle and preferences</p>
       </div>
 
-      <div className='container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pb-14'>
+      <div className='container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pb-24'>
             {/* Card 1 */} 
             <div className='popular_card bg-green-950 p-10 pt-24 rounded-lg relative'>
                 <img src={Silver} alt="popular_image" 
