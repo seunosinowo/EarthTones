@@ -1,11 +1,12 @@
-import React, {lazy, Suspense} from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import NavBar from "./components/NavBar"
-import { Loader } from "lucide-react"
+import React, {lazy, Suspense} from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Loader from "./components/Loader/Loading";
 
 const HeroSection = lazy(() => import('./components/HeroSection'))
 const WeatherSection = lazy(() => import('./components/WeatherSection'))
 const Services = lazy(() => import('./components/Services'))
+const Popular = lazy(() => import('./components/Popular'))
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
             <HeroSection/>
             <WeatherSection/>
             <Services/>
+            <Popular/>
+
+
             </Suspense>
         </BrowserRouter>
 

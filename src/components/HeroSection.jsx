@@ -1,5 +1,5 @@
 import React from 'react';
-import cup from '../assets/cup.png';
+import cupLeaf from '../assets/cupLeaf.png';
 
 const HeroSection = () => {
   return (
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </div>
 
         <div className='mt-5 w-full lg:w-1/2 relative'>
-          <img src={cup} alt="" className='w-full h-auto' />
+          <img src={cupLeaf} alt="" className='w-full h-auto' />
 
           {/* leaf area */}
           <div className='absolute top-10 right-0 opacity-30'>
