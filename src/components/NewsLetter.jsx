@@ -24,7 +24,7 @@ const NewsLetter = () => {
             );
             setMessage('Subscription successful! Thank you for subscribing.');
         } catch (error) {
-            setMessage('An error occurred. Please try again later.');
+            setMessage('An error occurred. Please try again.');
         } finally {
             setLoading(false);
         }
