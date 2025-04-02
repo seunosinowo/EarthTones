@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Loader from "./components/Loader/Loading";
 import ScrollUP from "./components/Scroll/ScrollUP";
 import Footer from "./components/Footer";
+import CopyRight from "./components/CopyRight";
 
 const HeroSection = lazy(() => import('./components/HeroSection'))
 const WeatherSection = lazy(() => import('./components/WeatherSection'))
@@ -26,10 +27,12 @@ function App() {
             <Services/>
             <Popular/>
             <NewsLetter/>
+            
             <ScrollUP/>
           </Suspense>
         </BrowserRouter>
         <Footer/>
+        <CopyRight/>
       </div>
     </>
   )
