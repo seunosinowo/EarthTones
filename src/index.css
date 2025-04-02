@@ -109,3 +109,7 @@ h3 {
     @apply -top-10;
 }
 
+/* Scroll */
+html {
+    scroll-behavior: smooth;
+}
