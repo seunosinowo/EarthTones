@@ -3,7 +3,7 @@ import cupLeaf from '../assets/cupLeaf.png';
 
 const HeroSection = () => {
   return (
-    <div id='Herosection' className='py-20 md:py-24 container mx-auto'>
+    <div className='py-20 md:py-24 container mx-auto' id='home'>
         {/* blob 1 */}
         <div className='w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
         </div>
@@ -42,8 +42,8 @@ const HeroSection = () => {
           </div>
 
           <div className='mt-4 space-x-4'>
-            <i className="ri-facebook-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
             <i className="ri-twitter-x-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+            <i className="ri-facebook-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
             <i className="ri-instagram-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
             <i className="ri-linkedin-box-fill text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
           </div>

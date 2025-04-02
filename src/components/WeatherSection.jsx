@@ -11,7 +11,6 @@ import windIcon from '../assets/wind.png';
 
 const WeatherSection = () => {
   const cityRef = useRef();
-  const countryRef = useRef();
   const [weatherData, setWeatherData] = useState(null);
 
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -36,7 +35,6 @@ const WeatherSection = () => {
 
   const search = async () => {
     const city = cityRef.current.value;
-    const country = countryRef.current.value;
 
     if (city === "") {
       alert("Enter city name");
@@ -44,7 +42,7 @@ const WeatherSection = () => {
     }
 
     try {
-      const response = await axios.get(`${apiUrl}?q=${city},${country}&units=metric&appid=${apiKey}`);
+      const response = await axios.get(`${apiUrl}?q=${city}&units=metric&appid=${apiKey}`);
       const data = response.data;
 
       const icon = allIcons[data.weather[0].icon] || clearIcon;
@@ -64,13 +62,12 @@ const WeatherSection = () => {
 
   useEffect(() => {
     cityRef.current.value = "Lagos";
-    countryRef.current.value = "NG";
     search();
   }, []);
 
   return (
     <div className="weather bg-green-950 p-6 sm:p-8 md:p-10 rounded-lg flex flex-col items-center justify-center shadow-lg text-white">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-center">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-center" id='forecast'>
         Weather Forecast
       </h1>
       <div className="search-bar flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6 w-full">
@@ -78,12 +75,6 @@ const WeatherSection = () => {
           ref={cityRef}
           type="text"
           placeholder="City"
-          className="h-12 w-full sm:w-auto rounded-full px-6 text-gray-700 bg-teal-100 text-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-        />
-        <input
-          ref={countryRef}
-          type="text"
-          placeholder="Country Code (e.g., NG)"
           className="h-12 w-full sm:w-auto rounded-full px-6 text-gray-700 bg-teal-100 text-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
         <img

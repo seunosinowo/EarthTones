@@ -6,13 +6,13 @@ import cup from '../assets/cup.png';
 
 const Popular = () => {
   return (
-    <div className='bg-green-900'>
+    <div className='bg-green-900' id='popular'>
       <div className='flex flex-col items-center gap-3 text-center mb-48 md:mb-48'>
         <h2 className='title mt-24'>Explore the Harmony of Nature and Lifestyle</h2>
         <p className='max-w-2xl'>Find your ideal plant match based on your lifestyle and preferences</p>
       </div>
 
-      <div className='container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pb-14'>
+      <div className='container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pb-24'>
             {/* Card 1 */} 
             <div className='popular_card bg-green-950 p-10 pt-24 rounded-lg relative'>
                 <img src={Silver} alt="popular_image" 
