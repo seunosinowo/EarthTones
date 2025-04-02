@@ -31,12 +31,12 @@ const HeroSection = () => {
 
           <div className='mt-7 flex flex-col gap-2 sm:flex-row'>
             <button className='btn'>
-              <span>Shop Now</span>{" "}
+              <span>Get Inspired</span>{" "}
               <i className='ri-leaf-line'></i>
             </button>
 
             <button className='btn btn_outline hover:bg-yellow-500'>
-              <span>Know More</span>{" "}
+              <span>Stay Updated</span>{" "}
               <i className='ri-leaf-line'></i>
             </button>
           </div>
