@@ -6,7 +6,7 @@ import cup from '../assets/cup.png';
 
 const Popular = () => {
   return (
-    <div className='bg-green-900'>
+    <div className='bg-green-900' id='popular'>
       <div className='flex flex-col items-center gap-3 text-center mb-48 md:mb-48'>
         <h2 className='title mt-24'>Explore the Harmony of Nature and Lifestyle</h2>
         <p className='max-w-2xl'>Find your ideal plant match based on your lifestyle and preferences</p>

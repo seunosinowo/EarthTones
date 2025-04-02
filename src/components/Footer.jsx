@@ -4,10 +4,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const FootLinks = [
-    { name: 'Home', href: '#'},
-    { name: 'Forecast', href: '#'},
-    { name: 'Services', href: '#'},
-    { name: 'Newsletter', href: '#'},
+    { name: 'Home', href: '#home'},
+    { name: 'Forecast', href: '#forecast'},
+    { name: 'Services', href: '#services'},
+    { name: 'Popular', href: '#popular'},
+    { name: 'Newsletter', href: '#news'},
   ]
 
   return (
@@ -52,7 +53,7 @@ const Footer = () => {
           <a href="https://instagram.com" target="_blank" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
             <i className="ri-instagram-line text-2xl"></i>
           </a>
-          
+
           <a href="https://linkedin.com" target="_blank" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
             <i className="ri-linkedin-box-fill text-2xl"></i>
           </a>

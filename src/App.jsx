@@ -1,5 +1,5 @@
 import React, {lazy, Suspense} from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Loader from "./components/Loader/Loading";
 import ScrollUP from "./components/Scroll/ScrollUP";
@@ -22,12 +22,11 @@ function App() {
         <BrowserRouter>
         <NavBar/>
           <Suspense fallback = {<div><Loader/></div>}>
-            <HeroSection/>
-            <WeatherSection/>
-            <Services/>
-            <Popular/>
-            <NewsLetter/>
-            
+            <HeroSection />
+            <WeatherSection />
+            <Services />
+            <Popular />
+            <NewsLetter />
             <ScrollUP/>
           </Suspense>
         </BrowserRouter>

@@ -67,7 +67,7 @@ const WeatherSection = () => {
 
   return (
     <div className="weather bg-green-950 p-6 sm:p-8 md:p-10 rounded-lg flex flex-col items-center justify-center shadow-lg text-white">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-center">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-center" id='forecast'>
         Weather Forecast
       </h1>
       <div className="search-bar flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6 w-full">
