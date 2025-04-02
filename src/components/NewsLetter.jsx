@@ -22,16 +22,16 @@ const NewsLetter = () => {
                 { email }, 
                 'zApUXWMwBkV13_DfE'
             );
-            setMessage('Subscription successful! Thank you for subscribing.');
+            setMessage('Subscription successful! Thank you for subscribing');
         } catch (error) {
-            setMessage('An error occurred. Please try again.');
+            setMessage('An error occurred. Please try again');
         } finally {
             setLoading(false);
         }
     };
 
     return (
-        <div className='bg-yellow-100 text-green-950 pt-20 pb-10 md:pt-28 relative'>
+        <div className='bg-yellow-100 text-green-950 pt-28 pb-10 md:pt-28 relative'>
             <div className='container text-white absolute top-0 right-0 left-0 -translate-y-1/2'>
                 <div className='bg-green-950 px-10 pt-5 pb-10 space-y-5 mt-12 rounded-md'>
                     <h3><span className='text-yellow-500'>Subscribe</span> to our newsletter

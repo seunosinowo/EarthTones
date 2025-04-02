@@ -2,12 +2,15 @@ import React, {lazy, Suspense} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Loader from "./components/Loader/Loading";
-import NewsLetter from "./components/NewsLetter";
+import ScrollUP from "./components/Scroll/ScrollUP";
+import Footer from "./components/Footer";
 
 const HeroSection = lazy(() => import('./components/HeroSection'))
 const WeatherSection = lazy(() => import('./components/WeatherSection'))
 const Services = lazy(() => import('./components/Services'))
 const Popular = lazy(() => import('./components/Popular'))
+const NewsLetter = lazy(() => import('./components/NewsLetter'))
+
 
 
 function App() {
@@ -23,21 +26,10 @@ function App() {
             <Services/>
             <Popular/>
             <NewsLetter/>
-
-
-            </Suspense>
+            <ScrollUP/>
+          </Suspense>
         </BrowserRouter>
-
-
-            {/* Touch back */}
-            {/* <Routes>
-              <Route path = "" element={<HeroSection/>}/>
-              <Route path = "" element= {<WeatherSection/>}/>
-              <Route path = "" element={<Services/>}/>
-            </Routes> */}
-
-
-        
+        <Footer/>
       </div>
     </>
   )
