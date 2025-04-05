@@ -9,6 +9,10 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
+
   const navLinks = [
     { name: 'Home', href: '#home'},
     { name: 'Forecast', href: '#forecast'},
@@ -50,7 +54,9 @@ const NavBar = () => {
             {navLinks.map((link) => (
             <li key={link.name}>
               <a href={link.href} 
-              className='nav-link hover:underline'>{link.name}</a>
+              className='nav-link hover:underline'
+              onClick={closeMenu}
+              >{link.name}</a>
             </li>
           ))}
           </ul>

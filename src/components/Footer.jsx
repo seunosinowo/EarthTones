@@ -42,19 +42,19 @@ const Footer = () => {
 
         <div className="flex space-x-4 mt-2 justify-start items-start">
           
-          <a href="https://twitter.com" target="_blank" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
+          <a href="#" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
             <i className="ri-twitter-x-line text-2xl"></i>
           </a>
 
-          <a href="https://facebook.com" target="_blank" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
+          <a href="#" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
             <i className="ri-facebook-line text-2xl"></i>
           </a>
 
-          <a href="https://instagram.com" target="_blank" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
+          <a href="#" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
             <i className="ri-instagram-line text-2xl"></i>
           </a>
 
-          <a href="https://linkedin.com" target="_blank" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
+          <a href="#" className="text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer">
             <i className="ri-linkedin-box-fill text-2xl"></i>
           </a>
         </div>
