@@ -42,10 +42,21 @@ const HeroSection = () => {
           </div>
 
           <div className='mt-4 space-x-4'>
-            <i className="ri-twitter-x-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
-            <i className="ri-facebook-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
-            <i className="ri-instagram-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
-            <i className="ri-linkedin-box-fill text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+            <a href="#">
+              <i className="ri-twitter-x-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+            </a>
+
+            <a href="#">
+              <i className="ri-facebook-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+            </a>
+
+            <a href="#">
+              <i className="ri-instagram-line text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+            </a>
+
+            <a href="#">
+              <i className="ri-linkedin-box-fill text-slate-100 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+            </a>
           </div>
         </div>
 
